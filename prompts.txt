@@ -1,0 +1,28 @@
+// Default Body
+{
+    "email": "miprimerusuario@sivoc.com",
+    "password": "miprimerusuario"
+}
+
+// Login
+await fetch('http://localhost:3000/api/auth/login', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    //'Authorization': 'Bearer TU_ACCESS_TOKEN_AQUI' // Si necesitas un token de autenticación
+  },
+  body: JSON.stringify({
+    email: 'miprimerusuario@sivoc.com',
+    password: 'miprimerusuario',
+  })
+});
+
+// Refresh
+await fetch('http://localhost:3000/api/auth/refresh', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+  })
+});
