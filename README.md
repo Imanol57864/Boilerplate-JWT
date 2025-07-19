@@ -12,6 +12,6 @@ Este repositorio contiene un boilerplate de Node.js diseñado para implementar u
 
   * **`POST /api/auth/register`**: Registra un nuevo usuario.
   * **`POST /api/auth/login`**: Inicia sesión y obtiene un `access token` y establece una `refresh token` como `HttpOnly cookie`.
-  * **`POST /api/auth/refresh`**: Utiliza el `refresh token` de la cookie para obtener un nuevo `access token` y un nuevo `refresh token` (rotación).
-  * **`GET /api/auth/logout`**: Cierra la sesión del usuario, invalidando el `refresh token`.
-  * **`GET /api/auth/profile`**: Ruta protegida de ejemplo. Requiere un `access token` válido en el encabezado `Authorization: Bearer <access_token>`.
+  * **`POST /api/auth/refresh`**: Utiliza el `refresh token` de la cookie para obtener un nuevo `access token`.
+  * **`GET /api/auth/logout`**: Cierra la sesión del usuario, invalidando el `refresh token` y el `access token`.
+  * **`GET /api/auth/profile`**: Ruta protegida de ejemplo. Requiere un `access token` válido.
