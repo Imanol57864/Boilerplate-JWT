@@ -1,12 +1,8 @@
 # Boilerplate code para Refresh tokens
 
------
-
 ## Spike JWT para Refresh Tokens
 
 Este repositorio contiene un boilerplate de Node.js diseñado para implementar un sistema de autenticación robusto y seguro utilizando **JSON Web Tokens (JWT)** para `access tokens` y un mecanismo de `refresh tokens` para la gestión de sesiones y la renovación de tokens. Está configurado para trabajar con **MongoDB** como base de datos.
-
------
 
 ## Endpoints de la API
 
